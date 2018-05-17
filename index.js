@@ -20,8 +20,9 @@ exports.analyzeRecording = (event) => {
   
   const client = new speech.SpeechClient();
 
-  //const bucket = storage.bucket(object.bucket);
-  const bucket = storage.bucket('gray_results');
+  
+  const bucket = storage.bucket(DESTINATION BUCKET);
+  //replace this with you're desired destination bucket
   const dir = require('path').parse(object.name).dir;
   
   /*--------Older version of config--------------
